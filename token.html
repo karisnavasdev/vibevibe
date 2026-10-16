@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Token · vibe/vibe</title>
+  <meta name="theme-color" content="#101214"/>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"/>
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body data-page="token">
+  <div id="top"></div>
+  <main class="token-layout" id="main">
+    <aside class="token-rail">TOKENS</aside>
+    <section class="token-main">
+      <div class="tok-head">
+        <div class="tok-ava" id="tok-ava"></div>
+        <div>
+          <div class="tok-name" id="tok-name">BURN EVERYTHING</div>
+          <div class="tok-sub"><b id="tok-ticker">$BURN</b> <span id="tok-pair">ANTHROPIC</span></div>
+        </div>
+        <div class="addr-box">
+          <div class="addr">TOKEN ADDRESS <b>0x9805…E49c <button class="copy" type="button" aria-label="Copy token address">⎘</button></b></div>
+          <div class="addr">CREATOR ADDRESS <b>0xAc3b…4579 <button class="copy" type="button" aria-label="Copy creator address">⎘</button></b></div>
+        </div>
+      </div>
+      <div class="tok-progress" id="tok-prog"></div>
+      <div class="chart-wrap">
+        <div class="chart-tools">
+          <button class="tf" type="button">1m</button>
+          <button class="tf" type="button">5m</button>
+          <button class="tf on" type="button">15m</button>
+          <button class="tf" type="button">30m</button>
+          <button class="tf" type="button">1h</button>
+          <button class="tf" type="button">4h</button>
+          <button class="tf" type="button">1D</button>
+          <button class="tf" type="button">1W</button>
+          <span class="sp"></span>
+          <button class="seg on" type="button">MCap</button>
+          <button class="seg" type="button">Linear</button>
+          <button class="seg" type="button">Draw</button>
+        </div>
+        <div class="price-tag" id="tok-price">$0.007128</div>
+        <div class="wm" id="wm">BURN</div>
+        <svg class="chart-svg" viewBox="0 0 800 390" preserveAspectRatio="none" aria-label="Price chart">
+          <g stroke="#1c2126" stroke-width="1">
+            <line x1="0" y1="60" x2="800" y2="60"/>
+            <line x1="0" y1="120" x2="800" y2="120"/>
+            <line x1="0" y1="180" x2="800" y2="180"/>
+            <line x1="0" y1="240" x2="800" y2="240"/>
+            <line x1="0" y1="300" x2="800" y2="300"/>
+          </g>
+          <g>
+            <rect x="40" y="90" width="8" height="40" fill="#5bd08a"/><line x1="44" y1="70" x2="44" y2="140" stroke="#5bd08a"/>
+            <rect x="70" y="80" width="8" height="50" fill="#ef727b"/><line x1="74" y1="60" x2="74" y2="150" stroke="#ef727b"/>
+            <rect x="100" y="100" width="8" height="30" fill="#5bd08a"/><line x1="104" y1="90" x2="104" y2="145" stroke="#5bd08a"/>
+            <rect x="130" y="110" width="8" height="36" fill="#ef727b"/><line x1="134" y1="95" x2="134" y2="160" stroke="#ef727b"/>
+            <rect x="160" y="96" width="8" height="44" fill="#5bd08a"/><line x1="164" y1="80" x2="164" y2="150" stroke="#5bd08a"/>
+            <rect x="190" y="120" width="8" height="28" fill="#ef727b"/><line x1="194" y1="100" x2="194" y2="160" stroke="#ef727b"/>
+            <rect x="220" y="108" width="8" height="40" fill="#5bd08a"/><line x1="224" y1="90" x2="224" y2="160" stroke="#5bd08a"/>
+            <rect x="250" y="130" width="8" height="50" fill="#ef727b"/><line x1="254" y1="110" x2="254" y2="190" stroke="#ef727b"/>
+            <rect x="280" y="150" width="8" height="70" fill="#ef727b"/><line x1="284" y1="120" x2="284" y2="230" stroke="#ef727b"/>
+            <rect x="310" y="170" width="8" height="40" fill="#5bd08a"/><line x1="314" y1="150" x2="314" y2="220" stroke="#5bd08a"/>
+            <rect x="340" y="160" width="8" height="55" fill="#ef727b"/><line x1="344" y1="140" x2="344" y2="230" stroke="#ef727b"/>
+            <rect x="370" y="200" width="8" height="40" fill="#5bd08a"/><line x1="374" y1="180" x2="374" y2="250" stroke="#5bd08a"/>
+            <rect x="400" y="188" width="8" height="36" fill="#ef727b"/><line x1="404" y1="170" x2="404" y2="240" stroke="#ef727b"/>
+            <rect x="430" y="176" width="8" height="48" fill="#5bd08a"/><line x1="434" y1="150" x2="434" y2="240" stroke="#5bd08a"/>
+            <rect x="460" y="210" width="8" height="30" fill="#ef727b"/><line x1="464" y1="190" x2="464" y2="250" stroke="#ef727b"/>
+            <rect x="490" y="168" width="8" height="60" fill="#5bd08a"/><line x1="494" y1="140" x2="494" y2="250" stroke="#5bd08a"/>
+            <rect x="520" y="150" width="8" height="40" fill="#ef727b"/><line x1="524" y1="130" x2="524" y2="210" stroke="#ef727b"/>
+            <rect x="550" y="190" width="8" height="70" fill="#ef727b"/><line x1="554" y1="150" x2="554" y2="280" stroke="#ef727b"/>
+            <rect x="580" y="230" width="8" height="40" fill="#5bd08a"/><line x1="584" y1="200" x2="584" y2="280" stroke="#5bd08a"/>
+            <rect x="610" y="200" width="8" height="50" fill="#5bd08a"/><line x1="614" y1="170" x2="614" y2="270" stroke="#5bd08a"/>
+            <rect x="640" y="180" width="8" height="36" fill="#ef727b"/><line x1="644" y1="160" x2="644" y2="230" stroke="#ef727b"/>
+            <rect x="670" y="168" width="8" height="44" fill="#5bd08a"/><line x1="674" y1="150" x2="674" y2="230" stroke="#5bd08a"/>
+            <rect x="700" y="150" width="8" height="40" fill="#5bd08a"/><line x1="704" y1="130" x2="704" y2="210" stroke="#5bd08a"/>
+            <rect x="730" y="140" width="8" height="34" fill="#ef727b"/><line x1="734" y1="120" x2="734" y2="190" stroke="#ef727b"/>
+          </g>
+          <g>
+            <rect x="40" y="320" width="6" height="28" fill="#5bd08a"/>
+            <rect x="70" y="330" width="6" height="18" fill="#ef727b"/>
+            <rect x="130" y="310" width="6" height="40" fill="#5bd08a"/>
+            <rect x="190" y="336" width="6" height="12" fill="#ef727b"/>
+            <rect x="250" y="300" width="6" height="48" fill="#5bd08a"/>
+            <rect x="310" y="318" width="6" height="30" fill="#ef727b"/>
+            <rect x="400" y="308" width="6" height="42" fill="#5bd08a"/>
+            <rect x="490" y="290" width="6" height="58" fill="#5bd08a"/>
+            <rect x="550" y="326" width="6" height="22" fill="#ef727b"/>
+            <rect x="640" y="300" width="6" height="50" fill="#5bd08a"/>
+            <rect x="730" y="314" width="6" height="34" fill="#ef727b"/>
+          </g>
+          <text x="8" y="368" fill="#6d767e" font-size="11" font-family="ui-monospace,monospace">15 03:00 06:00 09:00 12:00 15:00 18:00 21:00 16 03:00 06:00</text>
+        </svg>
+      </div>
+      <div class="trade-tabs" role="tablist">
+        <button class="on" type="button" data-panel="trades">Recent trades</button>
+        <button type="button" data-panel="top">Top traders</button>
+        <button type="button" data-panel="holders">Holders</button>
+        <button type="button" data-panel="about">About</button>
+        <button type="button" data-panel="comments">Comments</button>
+      </div>
+      <div class="panel on" id="panel-trades"><div class="table-wrap" id="trades"></div></div>
+      <div class="panel" id="panel-top"><div class="table-wrap" id="top-traders"></div></div>
+      <div class="panel" id="panel-holders"><div class="table-wrap" id="holders"></div></div>
+      <div class="panel" id="panel-about"><div class="about" id="about-copy"></div></div>
+      <div class="panel" id="panel-comments">
+        <div class="comment"><span class="av">N</span><div><b>nova.eth</b> <small>2h</small><div>Curve is moving. Testnet only.</div></div></div>
+        <div class="comment"><span class="av">L</span><div><b>limehat</b> <small>5h</small><div>Watching the 15m.</div></div></div>
+      </div>
+    </section>
+    <aside class="trade">
+      <div class="mc-big"><b id="tok-mc">$6.9M</b><span>MARKET CAP</span></div>
+      <div class="stat-grid">
+        <div class="stat"><b id="tok-vol">$6.1M</b><span>VOL · 24H</span></div>
+        <div class="stat"><b id="tok-holders">979</b><span>HOLDERS</span></div>
+        <div class="stat"><b class="down">−0.43%</b><span>5M</span></div>
+        <div class="stat"><b id="tok-chg" class="up">+1.00%</b><span>1H</span></div>
+      </div>
+      <div class="side-toggle">
+        <button class="on b" type="button" data-side="buy">Buy</button>
+        <button class="s" type="button" data-side="sell">Sell</button>
+      </div>
+      <button class="buy-btn" id="buy-label" type="button">Buy BURN</button>
+      <div class="amt"><span>$</span><input id="amt" inputmode="decimal" value="0.00" aria-label="Amount"/><span data-quote>ANTHROPIC</span></div>
+      <div class="quick">
+        <button type="button" data-amt="10">$10</button>
+        <button type="button" data-amt="100">$100</button>
+      </div>
+      <button class="connect-trade" id="connect-trade" type="button">Connect wallet to trade</button>
+      <div class="flow">
+        <div class="line"><span>BUY TXNS 718</span></div>
+        <div class="bar"><i style="width:78%"></i></div>
+        <div class="line" style="margin-top:10px"><span>BUY VOL $3.1M</span></div>
+        <div class="bar"><i style="width:64%"></i></div>
+        <div class="line" style="margin-top:10px"><span>BUYERS 332</span></div>
+        <div class="bar"><i class="red" style="width:28%"></i></div>
+      </div>
+    </aside>
+  </main>
+  <div id="tab"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

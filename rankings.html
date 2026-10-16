@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Rankings · vibe/vibe</title>
+  <meta name="theme-color" content="#101214"/>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"/>
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body data-page="rankings">
+  <div id="top"></div>
+  <main class="page" id="main">
+    <div class="lead">
+      <h1>Rankings</h1>
+      <p>Explore the projects and traders shaping vibe/vibe.</p>
+    </div>
+    <div class="notice">Rankings aren’t final. They show recorded testnet activity as is. Bots, wash trading and duplicate wallets will be filtered out before anything is final.</div>
+    <div class="rank-tabs">
+      <button class="on" type="button">Traders</button>
+      <button type="button">Meme &amp; Artcoins</button>
+      <button type="button">Product &amp; Utility</button>
+      <button type="button">RWA &amp; Stocks</button>
+    </div>
+    <div class="tools">
+      <input id="rank-q" placeholder="Full wallet address (0x…)" aria-label="Search wallet"/>
+      <button class="ghost" type="button">Search</button>
+      <button class="ghost" type="button">Realized PnL</button>
+      <button class="ghost" type="button">Refresh</button>
+    </div>
+    <p class="hint">Rankings update in progress · last published 06:42 UTC</p>
+    <div class="rank-layout">
+      <div class="rank-table">
+        <table>
+          <thead>
+            <tr><th>No.</th><th>Wallet</th><th>Tokens traded</th><th>Buys / sells</th><th>Realized PnL</th><th>Unrealized PnL</th><th>Portfolio size</th></tr>
+          </thead>
+          <tbody id="rank-body"></tbody>
+        </table>
+      </div>
+      <aside class="rank-side" id="rank-side"></aside>
+    </div>
+  </main>
+  <div id="tab"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

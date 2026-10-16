@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>vibe/vibe · Robinhood Chain Testnet</title>
+  <meta name="theme-color" content="#101214"/>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"/>
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body data-page="gate">
+  <main class="gate">
+    <section class="gate-card" aria-labelledby="agree-title">
+      <div class="gate-brand">
+        <img src="assets/logo.svg" alt=""/>
+        <span class="wordmark">vibe<i>/</i>vibe</span>
+      </div>
+      <h1 id="agree-title">Agree to the User agreement to continue.</h1>
+      <p>Read the full agreement and the documents it incorporates below.</p>
+      <div class="doc-grid">
+        <button class="doc" type="button" data-doc="user">User agreement</button>
+        <button class="doc" type="button" data-doc="privacy">Privacy policy</button>
+        <button class="doc" type="button" data-doc="risk">Risk disclosure</button>
+        <button class="doc" type="button" data-doc="eligibility">Eligibility &amp; restricted jurisdictions</button>
+      </div>
+      <div id="legal" class="legal" hidden></div>
+      <div class="gate-actions">
+        <button class="leave" id="leave" type="button">Leave site</button>
+        <button class="agree" id="agree" type="button">I agree &amp; enter →</button>
+      </div>
+    </section>
+  </main>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
